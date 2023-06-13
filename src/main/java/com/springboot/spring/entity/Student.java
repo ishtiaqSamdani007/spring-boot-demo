@@ -1,6 +1,5 @@
 package com.springboot.spring.entity;
 import jakarta.persistence.*;
-import org.springframework.stereotype.Component;
 
 
 

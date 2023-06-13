@@ -9,13 +9,13 @@ import org.junit.jupiter.api.Assertions;
 
 import java.util.List;
 
-public class UniversityTest {
+ class UniversityTest {
 
     @Mock
     private Student mockStudent;
 
     @Test
-    public void testGettersAndSetters() {
+     void testGettersAndSetters() {
         Long id = 1L;
         String name = "ABC University";
         University university = new University();
@@ -31,7 +31,7 @@ public class UniversityTest {
 
 
     @Test
-    public void testConstructorWithNameAndStudents() {
+     void testConstructorWithNameAndStudents() {
         String name = "ABC University";
         List<Student> students = Collections.singletonList(mockStudent);
 
@@ -43,7 +43,7 @@ public class UniversityTest {
     }
 
     @Test
-    public void testConstructorWithIdNameAndStudents() {
+     void testConstructorWithIdNameAndStudents() {
         Long id = 1L;
         String name = "ABC University";
         List<Student> students = Collections.singletonList(mockStudent);

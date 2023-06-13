@@ -1,6 +1,6 @@
 package com.springboot.spring.services;
 
-import com.springboot.spring.DOA.UniversityRepository;
+import com.springboot.spring.dao.UniversityRepository;
 
 import com.springboot.spring.entity.Student;
 import com.springboot.spring.entity.University;

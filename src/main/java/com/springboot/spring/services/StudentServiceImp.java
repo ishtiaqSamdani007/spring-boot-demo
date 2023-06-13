@@ -1,7 +1,7 @@
 package com.springboot.spring.services;
 
-import com.springboot.spring.DOA.StudentRepository;
-import com.springboot.spring.DOA.UniversityRepository;
+import com.springboot.spring.dao.StudentRepository;
+import com.springboot.spring.dao.UniversityRepository;
 import com.springboot.spring.entity.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,13 +20,6 @@ public class StudentServiceImp implements StudentService {
 
     @Autowired
     private UniversityRepository universityRepository;
-
-
-//    @Override
-//    public List<Student> findByUnversityId(Long theId) {
-//
-//        op
-//    }
 
     @Override
     @Transactional

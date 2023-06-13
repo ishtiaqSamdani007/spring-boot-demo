@@ -23,14 +23,12 @@ public class UniversityRestController {
 
     @GetMapping("/universities")
     public List<University> getUniversities(){
-        List<University> universities = universityService.findAll();
-        return universities;
+        return universityService.findAll();
     }
 
     @GetMapping("/Students")
     public List<Student> getStudents(){
-        List<Student> Students = studentService.findAll();
-        return Students;
+        return studentService.findAll();
     }
 
     @GetMapping("/Students/{studentId}")
@@ -55,14 +53,12 @@ public class UniversityRestController {
 
     @GetMapping("/Students/{universityId}")
     public List<Student> getStudentsByUniversityId(@PathVariable Long universityId){
-        List<Student> Students = studentService.findByUniversityId(universityId);
-        return Students;
+        return studentService.findByUniversityId(universityId);
     }
 
 
     @PostMapping("/universities")
     public University addUniversity(@RequestBody University university){
-//        university.setId(0L);
         universityService.save(university);
 
         return university;
@@ -70,7 +66,6 @@ public class UniversityRestController {
 
     @PostMapping("/Students")
     public Student addStudent(@RequestBody Student student){
-//        student.setId(0L);
         studentService.save(student);
 
         return student;

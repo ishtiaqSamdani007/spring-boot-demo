@@ -1,9 +1,8 @@
 package com.springboot.spring.services;
 
-import com.springboot.spring.DOA.StudentRepository;
+import com.springboot.spring.dao.StudentRepository;
 import com.springboot.spring.entity.Student;
 
-import com.springboot.spring.services.StudentServiceImp;
 import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.runner.RunWith;

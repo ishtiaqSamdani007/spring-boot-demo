@@ -1,4 +1,4 @@
-package com.springboot.spring.DOA;
+package com.springboot.spring.dao;
 
 import com.springboot.spring.entity.Student;
 import org.springframework.data.jpa.repository.JpaRepository;

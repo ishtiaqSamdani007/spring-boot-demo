@@ -1,12 +1,10 @@
 package com.springboot.spring.services;
 
-import com.springboot.spring.DOA.UniversityRepository;
+import com.springboot.spring.dao.UniversityRepository;
 import com.springboot.spring.entity.University;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import java.util.List;
 import java.util.Optional;
 
@@ -51,9 +49,9 @@ public class UniversityServiceImp implements UniversityService {
 
     @Override
     @Transactional
-    public void deleteById(Long theId) {
+        public void deleteById(Long theId) {
 
-        universityRepository.deleteById(theId);
+            universityRepository.deleteById(theId);
 
-    }
+        }
 }

@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Assertions;
 
         import static org.mockito.Mockito.*;
 
-public class StudentTest {
+ class StudentTest {
 
     @Mock
     private University mockUniversity;
@@ -21,7 +21,7 @@ public class StudentTest {
 
 
     @Test
-    public void testGettersAndSetters() {
+     void testGettersAndSetters() {
         Student student = new Student();
 
         Long id = 1L;
@@ -37,7 +37,7 @@ public class StudentTest {
     }
 
     @Test
-    public void testToString() {
+     void testToString() {
         Long id = 1L;
         String name = "John Doe";
         Student student = new Student(id, name, mockUniversity);

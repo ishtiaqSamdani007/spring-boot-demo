@@ -1,6 +1,5 @@
 package com.springboot.spring.services;
 
-import com.springboot.spring.entity.Student;
 import com.springboot.spring.entity.University;
 
 import java.util.List;
